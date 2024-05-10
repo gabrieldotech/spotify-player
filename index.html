@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Allowed</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <i class="fas fa-chevron-down arrow-down"></i>
+            <div class="title">
+                <h3>TOCANDO DO ARTISTA</h3> 
+                <h2>TV Girl</h2>
+            </div>
+            <i class="fas fa-ellipsis-v ellipsis"></i>
+        </nav>
+       <div class="content">
+            <div class="developer-information">
+                <p class="developer">Developed by <a href="https://www.instagram.com/gabrieldotech/">gabrieldotech</a></p>
+            </div>
+            <img class="imagem" src="img/not allowed.jpeg" alt="">
+            <div class="artist-information">
+                <h2 class="song-title">Not Allowed</h2>
+                <div class="about">
+                    <span class="square">E</span>
+                    <p class="artist">TV Girl</p>
+                    <i class="fas fa-check play-icon"></i>
+                </div>
+            <div class="progress-bar">
+                <input type="range" id="music-progress" min="0" max="100" value="0">
+                <div class="progress-time progress-time-start">0:00</div>
+                <div class="progress-time progress-time-end">0:00</div>
+            </div>
+            <div class="control-buttons">
+                <i class="fas fa-backward"></i>
+                <i class="fas fa-play"></i>
+                <i class="fas fa-forward"></i>
+            </div>
+            <div class="btns">
+                <button id="lyricsButton">
+                    <i class="fas fa-music"></i>
+                </button>
+                <button id="repeatToggle" class="repeat-toggle">
+                    <i class="fas fa-sync"></i>
+                </button>
+            </div>
+        </div>
+        <div id="lyricsModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div id="lyricsText"></div>
+            </div>
+          </div>          
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

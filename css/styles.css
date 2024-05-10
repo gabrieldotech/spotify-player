@@ -1,0 +1,413 @@
+body {
+    background-color: #000;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 20%; 
+    height: 96vh; 
+    margin: auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    background: linear-gradient(135deg, #FF69B4, #000000);
+    margin-top: 12px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 30px;
+
+}
+
+.arrow-down {
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.ellipsis {
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.imagem {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    padding: 10px;
+}
+
+.title {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title h3, .title h2 {
+    margin: 0;
+}
+
+.title h3 {
+    opacity: .8;
+    font-size: 13px;
+}
+
+.title h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 6px;
+    font-size: 15px;
+}
+
+.developer {
+    margin-top:-40px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.developer p {
+    opacity: .9;
+}
+
+.developer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.song-title {
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    margin-bottom: 5px; 
+}
+
+.artist {
+    color: #999;
+    margin: 0;
+    font-size: 14px; 
+    font-weight: bold;
+}
+
+.artist-information {
+    margin-top: 40px;
+}
+
+
+.square {
+    display: inline-block;
+    width: 15px; /
+    height: 15px; 
+    background-color: #999;
+    color: #111;
+    text-align: center;
+    line-height: 15px; 
+    font-size: 12px; 
+    margin-right: 5px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.play-icon {
+    position: absolute;
+    top: -18px;
+    right: 0;
+    background-color: #1DB954;
+    color: #000;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.progress-bar {
+    margin-top: 25px; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.progress-time {
+    position: absolute;
+    bottom: -25px; 
+    font-size: 12px;
+    color: white;
+}
+
+.progress-time-start {
+    left: 0;
+}
+
+.progress-time-end {
+    right: 0;
+}
+
+#music-progress {
+    width: 100%; 
+    height: 3px; 
+    -webkit-appearance: none; 
+    appearance: none;
+    background-color: #535252;
+    outline: none; 
+    border-radius: 3px; 
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+#music-progress::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 10px; 
+    height: 10px; 
+    background-color: #fff; 
+    border-radius: 50%; 
+    cursor: pointer; 
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.control-buttons i {
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 20px;
+    color: white;
+}
+
+
+.control-buttons .repeat-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.control-buttons .repeat-toggle i {
+    color: #ccc;
+    font-size: 20px;
+}
+
+.control-buttons .repeat-toggle.active i {
+    color: #1DB954;
+}
+
+.control-buttons .fa-backward {
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 20px;
+    color: white;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.backward-repeat {
+    display: flex;
+    align-items: center;
+}
+
+.fa-backward {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.repeat-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px; 
+    margin-top: 26px;
+}
+
+#repeatToggle {
+    width: 1px;
+    margin-left: 0;
+}
+
+
+.repeat-toggle.active i {
+    color: #1DB954;
+}
+
+.play-buttons {
+    margin-left: auto; 
+}
+
+.control-buttons i {
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 20px;
+    color: white;
+}
+
+.btns {
+    display: flex;
+    justify-content: center; 
+    margin-top: 32px;
+    margin-left: -23px;
+}
+
+#lyricsButton,
+.repeat-toggle {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0; 
+    padding: 0; 
+}
+
+#lyricsButton i,
+.repeat-toggle i {
+    font-size: 20px;
+    margin-right: 18px; 
+    color: #fff;
+}
+#lyricsButton {
+    margin-right: 10px; 
+}
+
+#lyricsModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.translation {
+    font-size: 17px;
+}
+
+
+.modal-content {
+    width: 20%;
+    min-width: 200px;
+    min-height: 200px;
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.8), rgba(0, 0, 0, 0.8));
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    padding: 2.5rem;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate-modal .3s;
+}
+
+.close {
+    top: 0.625rem;
+    right: 0.625rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff0000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+
+
+.mostrar .modal p {
+    animation: animate-text 0.5s ease forwards 0.1s;
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.mostrar .modal {
+    animation: animate-modal .3s;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 80%; 
+        height: 640px;
+        margin-top: 50px;
+    }
+
+    .arrow-down,
+    .ellipsis {
+        font-size: 14px;
+    }
+
+    .control-buttons i {
+        font-size: 24px; 
+    }
+
+    .artist {
+        font-size: 12px; 
+    }
+    
+    .song-title {
+        font-size: 16px; 
+    }
+
+    .control-buttons {
+        margin-top: 50px; 
+    }
+
+    .repeat-toggle {
+        margin-top: 40px;   
+    }
+
+    .btns {
+        display: flex;
+        justify-content: center; 
+        margin-top: 30px; 
+    }
+
+    #lyricsButton,
+    #repeatToggle {
+        margin: 0 5px; 
+    }
+}
