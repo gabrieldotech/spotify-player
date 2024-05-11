@@ -157,12 +157,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-audio.addEventListener("timeupdate", function() {
-    if (!isNaN(audio.duration)) {
-        updateLyrics(Math.floor(audio.currentTime));
-    }
-});
-
 function updateLyrics(timeInSeconds) {
     const lyricsText = document.getElementById("lyricsText");
     const lyrics = [
@@ -243,4 +237,14 @@ lyricsText.innerHTML = `<p class="lyric">${currentLyric}</p><p class="translatio
 
 audio.addEventListener("timeupdate", function() {
     updateLyrics(Math.floor(audio.currentTime));
+});
+
+document.getElementById("downloadButton").addEventListener("click", function() {
+    var url = "audio/not_allowed.mp3";
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = url.split("/").pop();
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 });
