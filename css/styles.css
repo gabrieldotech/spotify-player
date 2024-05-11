@@ -6,7 +6,7 @@ body {
 
 .container {
     width: 20%; 
-    height: 96vh; 
+    height: 86vh; 
     margin: auto; 
     padding: 20px; 
     box-sizing: border-box; 
@@ -321,15 +321,15 @@ nav {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    margin: 0 10px; /* Adicionei margens iguais para os três botões */
+    margin: 0 10px; 
     padding: 0;
-    display: inline-flex; /* Adicionei para alinhar verticalmente */
-    align-items: center; /* Adicionei para alinhar verticalmente */
+    display: inline-flex; 
+    align-items: center; 
 }
 
 #downloadButton i {
     font-size: 20px;
-    margin-left: 35px; /* Reduzi a margem para manter os ícones mais próximos */
+    margin-left: 35px; 
     color: #fff;
 }
 
@@ -390,7 +390,7 @@ nav {
 
 @media only screen and (max-width: 767px) {
     .container {
-        width: 80%; 
+        width: 78%; 
         height: 640px;
         margin-top: 50px;
     }
