@@ -217,6 +217,8 @@ nav {
     color: #1DB954;
 }
 
+
+
 .control-buttons .fa-backward {
     font-size: 25px;
     cursor: pointer;
@@ -276,8 +278,9 @@ nav {
     display: flex;
     justify-content: center; 
     margin-top: 32px;
-    margin-left: -23px;
+    margin-left: 6%;
 }
+
 
 #lyricsButton,
 .repeat-toggle {
@@ -313,6 +316,23 @@ nav {
     color: #fff;
     font-weight: bold;
 }
+
+#downloadButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px; /* Adicionei margens iguais para os três botões */
+    padding: 0;
+    display: inline-flex; /* Adicionei para alinhar verticalmente */
+    align-items: center; /* Adicionei para alinhar verticalmente */
+}
+
+#downloadButton i {
+    font-size: 20px;
+    margin-left: 35px; /* Reduzi a margem para manter os ícones mais próximos */
+    color: #fff;
+}
+
 
 .translation {
     font-size: 17px;
@@ -405,6 +425,7 @@ nav {
         justify-content: center; 
         margin-top: 30px; 
     }
+    
 
     #lyricsButton,
     #repeatToggle {
