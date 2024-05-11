@@ -157,6 +157,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+audio.addEventListener("timeupdate", function() {
+    if (!isNaN(audio.duration)) {
+        updateLyrics(Math.floor(audio.currentTime));
+    }
+});
+
 function updateLyrics(timeInSeconds) {
     const lyricsText = document.getElementById("lyricsText");
     const lyrics = [
